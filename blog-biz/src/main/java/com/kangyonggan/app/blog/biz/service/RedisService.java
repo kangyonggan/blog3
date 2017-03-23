@@ -1,4 +1,4 @@
-package com.kangyonggan.app.myth.biz.service;
+package com.kangyonggan.app.blog.biz.service;
 
 import java.util.List;
 import java.util.Set;

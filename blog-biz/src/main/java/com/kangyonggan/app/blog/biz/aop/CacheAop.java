@@ -1,11 +1,10 @@
-package com.kangyonggan.app.myth.biz.aop;
+package com.kangyonggan.app.blog.biz.aop;
 
-import com.kangyonggan.app.myth.biz.service.RedisService;
-import com.kangyonggan.app.myth.biz.util.StringUtil;
-import com.kangyonggan.app.myth.model.annotation.CacheDelete;
-import com.kangyonggan.app.myth.model.annotation.CacheDeleteAll;
-import com.kangyonggan.app.myth.model.annotation.CacheGetOrSave;
-import com.kangyonggan.app.simclient.PropertiesUtil;
+import com.kangyonggan.app.blog.biz.service.RedisService;
+import com.kangyonggan.app.blog.common.util.StringUtil;
+import com.kangyonggan.app.blog.model.annotation.CacheDelete;
+import com.kangyonggan.app.blog.model.annotation.CacheDeleteAll;
+import com.kangyonggan.app.blog.model.annotation.CacheGetOrSave;
 import lombok.extern.log4j.Log4j2;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -13,6 +12,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
@@ -36,12 +36,14 @@ public class CacheAop {
     /**
      * redis键的前缀
      */
-    private String prefix = PropertiesUtil.getProperties("redis.prefix") + ":";
+    @Value("${redis.prefix}")
+    private String prefix;
 
     /**
      * 是否打开缓存
      */
-    private boolean isOpenCache = PropertiesUtil.getProperties("cache.open").equals("Y");
+    @Value("${cache.open}")
+    private boolean isOpenCache;
 
     @Pointcut("execution(* com.kangyonggan.app.myth.biz..*.*(..))")
     public void pointcut() {

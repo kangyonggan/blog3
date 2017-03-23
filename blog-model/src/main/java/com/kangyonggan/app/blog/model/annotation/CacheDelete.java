@@ -1,4 +1,4 @@
-package com.kangyonggan.app.myth.model.annotation;
+package com.kangyonggan.app.blog.model.annotation;
 
 import java.lang.annotation.*;
 

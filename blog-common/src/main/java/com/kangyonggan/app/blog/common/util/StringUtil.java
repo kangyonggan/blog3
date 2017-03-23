@@ -1,4 +1,4 @@
-package com.kangyonggan.app.myth.biz.util;
+package com.kangyonggan.app.blog.common.util;
 
 import org.apache.commons.lang3.StringUtils;
 

@@ -1,4 +1,4 @@
-package com.kangyonggan.app.myth.biz.freemarker;
+package com.kangyonggan.app.blog.biz.freemarker;
 
 import freemarker.core.Environment;
 import freemarker.template.Configuration;

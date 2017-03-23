@@ -1,4 +1,4 @@
-package com.kangyonggan.app.myth.mapper;
+package com.kangyonggan.app.blog.mapper;
 
 import org.springframework.stereotype.Component;
 import tk.mybatis.mapper.common.ConditionMapper;

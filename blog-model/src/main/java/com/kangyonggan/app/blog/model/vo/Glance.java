@@ -1,11 +1,13 @@
 package com.kangyonggan.app.blog.model.vo;
 
-import java.io.Serializable;
-import java.util.Date;
-import javax.persistence.*;
 import lombok.Data;
 
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.Date;
+
 @Data
+@Table(name = "glance")
 public class Glance implements Serializable {
     /**
      * 主键, 自增

@@ -49,7 +49,9 @@
     <!-- 配置AOP切面 -->
     <aop:config>
         <!--切点，用于事务-->
-        <aop:pointcut id="transactionPointcut" expression="execution(* com.kangyonggan.app.blog.service.impl..*.*(..))"/>
+        <aop:pointcut id="transactionPointcut"
+                      expression="execution(* com.kangyonggan.app.blog.biz.service.impl..*.*(..))"/>
+
         <!--事物切面-->
         <aop:advisor pointcut-ref="transactionPointcut" advice-ref="transactionAdvice"/>
     </aop:config>

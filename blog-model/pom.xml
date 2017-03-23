@@ -11,8 +11,34 @@
 
     <artifactId>blog-model</artifactId>
 
-    <name>Module Model</name>
+    <name>Module :: Model</name>
     <description>数据模型层</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.kangyonggan.app</groupId>
+            <artifactId>blog-common</artifactId>
+        </dependency>
+
+        <!--mybatis-->
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

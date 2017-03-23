@@ -11,7 +11,7 @@
 
     <artifactId>blog-service</artifactId>
 
-    <name>Module Service</name>
-    <description>业务逻辑层</description>
+    <name>Module :: Service</name>
+    <description>接口定义层</description>
 
 </project>

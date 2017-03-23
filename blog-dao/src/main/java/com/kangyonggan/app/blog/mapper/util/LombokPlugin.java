@@ -1,4 +1,4 @@
-package com.kangyonggan.app.myth.mapper.util;
+package com.kangyonggan.app.blog.mapper.util;
 
 import org.mybatis.generator.api.IntrospectedColumn;
 import org.mybatis.generator.api.IntrospectedTable;

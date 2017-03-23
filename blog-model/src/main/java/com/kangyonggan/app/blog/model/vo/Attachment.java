@@ -6,6 +6,7 @@ import javax.persistence.*;
 import lombok.Data;
 
 @Data
+@Table(name = "attachment")
 public class Attachment implements Serializable {
     /**
      * 主键, 自增

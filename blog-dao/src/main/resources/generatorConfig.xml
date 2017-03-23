@@ -10,23 +10,23 @@
 
         <!--base mapper-->
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
-            <property name="mappers" value="com.kangyonggan.app.myth.mapper.MyMapper"/>
+            <property name="mappers" value="com.kangyonggan.app.blog.mapper.MyMapper"/>
         </plugin>
 
         <!--serialize plugin-->
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
 
         <!--lombok plugin-->
-        <plugin type="com.kangyonggan.app.myth.mapper.util.LombokPlugin"/>
+        <plugin type="com.kangyonggan.app.blog.mapper.util.LombokPlugin"/>
 
         <!--jdbc driver-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/myth"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/blog"
                         userId="root" password="123456"/>
 
         <!--Xxx.java-->
-        <javaModelGenerator targetPackage="com.kangyonggan.app.myth.model.vo"
-                            targetProject="../myth-model/src/main/java">
+        <javaModelGenerator targetPackage="com.kangyonggan.app.blog.model.vo"
+                            targetProject="../blog-model/src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
@@ -37,7 +37,7 @@
         </sqlMapGenerator>
 
         <!--XxxMapper.java-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.kangyonggan.app.myth.mapper"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.kangyonggan.app.blog.mapper"
                              targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>

@@ -1,4 +1,4 @@
-package com.kangyonggan.app.myth.web.exception;
+package com.kangyonggan.app.blog.web.exception;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.servlet.ModelAndView;
