@@ -20,15 +20,14 @@
 
 <#include "sidebar.ftl"/>
 
-    <div class="page-content-area"></div>
+    <div class="sim-page"></div>
 
 <#include "footer.ftl"/>
 </div>
 
 <script>var ctx = '${ctx}';</script>
 <script src="${ctx}/static/libs/jquery/jquery.min.js"></script>
-<script src="${ctx}/static/libs/bootstrap/js/bootstrap.min.js"></script>
-<script src="${ctx}/static/libs/ace/ace.min.js"></script>
+<script src="${ctx}/static/app/js/simpage.js"></script>
 <script src="${ctx}/static/app/js/app.js"></script>
 <@block name="app-script"/>
 </body>
