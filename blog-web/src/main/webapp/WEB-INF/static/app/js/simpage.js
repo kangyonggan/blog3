@@ -106,7 +106,7 @@
 
             $.ajax({
                 'url': url,
-                'cache': !this.force_reload
+                'cache': false
             }).error(function () {
                 // 停止加载
                 stopLoading(false);
